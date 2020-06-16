@@ -29,8 +29,9 @@ const Form = (props) => {
         }
     }
     return (<Fragment>
-            <div style={{textAlign : "center"}}>{props.message}</div>
+            
             <div className={classes.root}>
+            <div style={{margin : "1em"}}>{props.message}</div>
                 <TextField label={'Username'} name="username" variant={'outlined'} 
                 className={classes.text}
                 onChange={(e)=> changeHandler(e)} value={data.username}/>

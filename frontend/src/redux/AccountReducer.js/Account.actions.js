@@ -16,6 +16,12 @@ export const register = (data) => {
                 payload : res
             })
         }
+        else {
+            return dispatch({
+                type : "RESET",
+                payload : res.message
+            })
+        }
       }
       catch(error){
          return dispatch({
@@ -38,6 +44,12 @@ export const login = (data) => {
             return dispatch({
                 type : types.login,
                 payload : res
+            })
+        }
+        else {
+            return dispatch({
+                type : "RESET",
+                payload : res.message
             })
         }
         }

@@ -13,7 +13,7 @@ function controller () {
             })             
          }
          catch(err){
-            res.status(400).json({
+            res.json({
                 status : false,
                 message : err.message      
             })
@@ -39,7 +39,7 @@ function controller () {
             })
           }
           else{
-            res.status(400).json({
+            res.json({
                 status : false,
                 message : `wrong creditenials`
             })
